@@ -10,7 +10,11 @@ using var channel = GrpcChannel.ForAddress("https://localhost:7005");
 
 var client = new Greeter.GreeterClient(channel);
 var reply = await client.SayHelloAsync(new HelloRequest { Name = "GreeterClient" });
-
 Console.WriteLine("Greeting: " + reply.Message);
+
+var pingClient = new Pinger.PingerClient(channel);
+var response = await pingClient.PingAsync(new PingRequest() { Message = "Ping" });
+Console.WriteLine("Ping: " + response.Message);
+
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();

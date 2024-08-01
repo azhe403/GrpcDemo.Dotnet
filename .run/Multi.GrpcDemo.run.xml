@@ -7,6 +7,11 @@
             <option name="type" value="immediately" />
           </ConditionSnapshot>
         </option>
+        <option name="executable">
+          <ExecutableSnapshot>
+            <option name="id" value="runConfig:.NET Launch Settings Profile.GrpcDemo.Server: https" />
+          </ExecutableSnapshot>
+        </option>
       </ExecutableRowSnapshot>
       <ExecutableRowSnapshot>
         <option name="condition">
@@ -16,6 +21,11 @@
             </attributes>
             <option name="type" value="waitPortOpened" />
           </ConditionSnapshot>
+        </option>
+        <option name="executable">
+          <ExecutableSnapshot>
+            <option name="id" value="runConfig:.NET Project.GrpcDemo.Client" />
+          </ExecutableSnapshot>
         </option>
       </ExecutableRowSnapshot>
     </rows>
